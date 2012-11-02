@@ -38,7 +38,7 @@ div.back_topbutton {
 
 div.back_topbutton:hover {
      background-color: #1bc989;
-     cursor: hand;
+     cursor: crosshair;
 }
 
 /* Navigation Menu--------------------------------------------------------------------------*/
@@ -86,8 +86,15 @@ div.back_topbutton:hover {
 }	
 
 h1 {
-	text-shadow: .25em .25em 1em; /*-- 4px, 16px--*/
+	text-shadow: .25em .25em 1em #fefbf7; /*-- 4px, 16px--*/
 	margin: 2%; 	 
+}
+
+#summit {
+	color: #fbf0e0;
+	background: #d2868f;
+	border: .2em dashed #f5ddb3; 
+	margin: .5%; 
 }
 		
 /* Types of Groups--------------------------------------------------------------------------*/
@@ -96,9 +103,7 @@ h1 {
 	opacity: .40;
 	float: right;
 	min-width: 15%;
-	min-height: 10%;
-	background: #c9321b;
-	border: .3em solid #1bb2c9;
+	border: .3em solid #d2868f;
 	border-radius: 2%;
 	padding-left: 2%;
 	margin-right: 12%;
@@ -137,10 +142,10 @@ h3 {
 .image a{	
 	display: block;
 	width: 100%;
-	outline: 0%; /*-- removes bl outline--*/
 	background: #f0cd91;
 	border: .3em solid #f0cd91; 
-	text-align: center;		
+	text-align: center;	
+	border-radius: 3%;	
 }
 
 .image a:visited {
@@ -181,9 +186,14 @@ h5 {
 	margin: 2%;
 }
 
+#end_of_pg {
+	border: .3em solid #e3f091;
+	width: 55%;
+}	
+
 #footer {
 	margin: 2%;
-	width: 55.555556%  
+	width: 55.555556% 	  
 }	
 
 	
