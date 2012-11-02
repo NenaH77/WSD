@@ -1,0 +1,189 @@
+/* Top Buttons and Summit Logo--------------------------------------------------------------------------*/
+
+#atthetop {
+	min-height: 6em;
+	background: 0% url('images/summit_church.jpg') no-repeat;
+}
+
+/* Main Style Page --------------------------------------------------------------------------*/
+
+body {
+	color: #c9891b;
+	font-size: 1.00em; /*-- 16px --*/
+	font-family: 'Yeseva One', cursive;
+	margin: 01.5625%;
+	padding: 00.520833%	
+}
+
+p {
+	margin: 2%;
+	padding: 0.4%;
+}	
+
+/* Top Button Menu--------------------------------------------------------------------------*/
+div.back_topbutton {
+     background-color: #f9ecd6;
+     padding: .06em .2em .4em .2em;
+     width:05.555556%;
+     text-align: center;
+     border-width : thin;
+     border-color : #c29424;
+     border-style : solid;
+     border-collapse : collapse;
+     border-radius: .2em;
+     position: fixed;
+     bottom: -.4em;
+     left: .2em;
+}
+
+div.back_topbutton:hover {
+     background-color: #1bc989;
+     cursor: hand;
+}
+
+/* Navigation Menu--------------------------------------------------------------------------*/
+
+#navigation {
+	margin: auto;
+	padding: 0;
+	width: 75%; /*-- 675px/900px= .75--*/ 
+}
+
+#navigation li{
+	width: 25%;
+	float: left;
+	list-style: none;
+	background: #e3f091;
+}
+
+#navigation a { 
+	color: #ae9c2a;
+	display: block; 
+	text-decoration: none;
+}
+
+#navigation a:visited {
+	 color: #c9321b;
+}	 	
+	
+#navigation a:hover {
+	 color: #321bc9;
+}
+
+#navigation a:active {
+	 color: #1bc989;
+}
+	 
+/* About Summit--------------------------------------------------------------------------*/
+
+#paragraph {
+	-moz-column-count: 3;
+	-moz-column-gap: 02.222222em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 02.222222em;
+	column-count: 3;
+	column-gap: 02.222222em;
+}	
+
+h1 {
+	text-shadow: .25em .25em 1em; /*-- 4px, 16px--*/
+	margin: 2%; 	 
+}
+		
+/* Types of Groups--------------------------------------------------------------------------*/
+
+#group {
+	opacity: .40;
+	float: right;
+	min-width: 15%;
+	min-height: 10%;
+	background: #c9321b;
+	border: .3em solid #1bb2c9;
+	border-radius: 2%;
+	padding-left: 2%;
+	margin-right: 12%;
+}	
+
+h2 {
+	font-size: 2em; 
+	margin: auto;
+}	 
+
+ol li {
+	list-style-type: square;
+}
+
+/* Gallery--------------------------------------------------------------------------*/
+
+h3 {
+	font-size: 2em;
+	margin: 2%;	
+}
+	
+.image {
+	list-style-type: none;
+	width: 98%;
+	margin: .2em;
+	padding: .1%;
+	overflow: hidden;
+	clear: both;
+}
+
+.image li {
+	float: left;
+	margin-left: .1em;
+}
+		
+.image a{	
+	display: block;
+	width: 100%;
+	outline: 0%; /*-- removes bl outline--*/
+	background: #f0cd91;
+	border: .3em solid #f0cd91; 
+	text-align: center;		
+}
+
+.image a:visited {
+	background: #cf8765;
+}
+
+.image a:hover {
+	background: #1bb2c9;
+}
+	
+.image a:active {
+	background: #fffdd0;
+} 
+
+/*---------------table-------------------*/
+
+table {
+	border-collapse: collapse;
+	border: .05em solid #000000;
+	clear: both;
+	margin: 2%;
+}
+
+td {
+	border: .05em solid #000000;
+}
+
+th {
+	text-align: center;
+	background-color: #d2868f;
+	color: #fefcf8;
+}
+
+/* Footer--------------------------------------------------------------------------*/
+
+h5 {
+	font-size: 2em;
+	margin: 2%;
+}
+
+#footer {
+	margin: 2%;
+	width: 55.555556%  
+}	
+
+	
