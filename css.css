@@ -127,8 +127,7 @@ h3 {
 	
 .image {
 	list-style-type: none;
-	width: 98%;
-	margin: .2em;
+	width: 100%;
 	padding: .1%;
 	overflow: hidden;
 	clear: both;
@@ -136,7 +135,8 @@ h3 {
 
 .image li {
 	float: left;
-	margin-left: .1em;
+	padding: 1%;
+	
 }
 		
 .image a{	
