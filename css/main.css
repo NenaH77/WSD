@@ -1,0 +1,245 @@
+/* Top Buttons and Summit Logo--------------------------------------------------------------------------*/
+
+#summit_logo {
+	background: 0% url('../images/summit_church.jpg') no-repeat;
+	height: 6em;
+}
+
+/* Main Style Page --------------------------------------------------------------------------*/
+
+body {
+	color: #c9891b;
+	font-size: 1.00em; /*-- 16px --*/
+	font-family: 'Yeseva One', cursive;
+	margin: 01.5625%;
+	padding: 00.520833%	
+}
+
+p {
+	margin: 2%;
+	padding: 0.4%;
+}	
+
+/* Top Button Menu--------------------------------------------------------------------------*/
+div.back_topbutton {
+     background-color: #f9ecd6;
+     padding: .06em .2em .4em .2em;
+     width:05.555556%;
+     text-align: center;
+     border-width : thin;
+     border-color : #c29424;
+     border-style : solid;
+     border-collapse : collapse;
+     border-radius: .2em;
+     position: fixed;
+     bottom: -.4em;
+     left: .2em;
+}
+
+div.back_topbutton:hover {
+     background-color: #1bc989;
+     cursor: crosshair;
+}
+
+/* Navigation Menu--------------------------------------------------------------------------*/
+
+#navigation { 
+	width: 45%; /*--600px/900px= .75--*/
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+}
+#navigation li {
+	list-style-type: none;
+	float: left;
+	padding: 3%;
+	background: #e3f091;
+}
+
+#navigation li a {
+	text-decoration: none;
+	color: #ae9c2a;
+}
+
+#navigation li a:visited {
+	background: #c9321b;
+}
+
+#navigation li a:hover {
+	background: #321bc9;
+}
+
+#navigation li a:active {
+	background: #1bc989;
+}
+/* About Summit--------------------------------------------------------------------------*/
+
+h1 {
+	text-shadow: .25em .25em 1em #fefbf7; /*-- 4px, 16px--*/
+	margin: 2%; 	 
+}
+
+#summit {
+	color: #fbf0e0;
+	background: #d2868f;
+	border: .2em dashed #f5ddb3; 
+	margin: .5%; 
+}
+
+#summit p {
+	-moz-column-count: 3;
+	-moz-column-gap: 02.222222em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 02.222222em;
+	column-count: 3;
+	column-gap: 02.222222em;
+}	
+		
+/* Types of Groups--------------------------------------------------------------------------*/
+
+h2 {
+	font-size: 2em; 
+	margin: 2%;
+}	
+
+#groups {
+	border: .3em solid #d2868f;
+	border-radius: 2%;
+	float: right;
+	margin: 0 5% 0 5%; 
+	padding: 0 2% 0 2%;
+}
+
+ol li {
+	opacity: .40;
+	list-style-type: square;
+}	
+
+/* Gallery--------------------------------------------------------------------------*/
+
+h3 {
+	font-size: 2em;
+	margin: 2%;
+}
+
+section img {
+	max-width: 100%;
+}
+
+section ul {
+	width: 97%;
+	margin: 0 3% 1% 2%; 
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}			
+
+section ul li { 
+	width: 20%;
+	padding: 1% 2% 1% 1%;
+	margin: 1%;
+	background: #f0cd91;
+	border: 5% solid #f0cd91;
+	border-radius: 3%;
+	float: left;
+}
+
+section ul li a {
+	padding: 4%;
+	text-decoration: none; 
+	background: #d2868f;
+	display: block;
+	text-align: center; 
+	 
+}
+
+section ul li a:visited {
+	background: #cf8765;
+}
+
+section ul li a:hover {
+	background: #1bb2c9;
+}
+	
+section ul li a:active {
+	background: #fffdd0;
+} 
+
+/*---------------table-------------------*/
+
+table {
+	border-collapse: collapse;
+	border: .05em solid #000000;
+	clear: both;
+	margin: 2%;
+}
+
+td {
+	border: .05em solid #000000;
+}
+
+th {
+	text-align: center;
+	background-color: #d2868f;
+	color: #fefcf8;
+}
+
+/* Footer--------------------------------------------------------------------------*/
+
+h5 {
+	font-size: 2em;
+	margin: 2%;
+}
+
+#end_of_pg {
+	border: .3em solid #e3f091;
+	width: 55%;
+}	
+
+#footer {
+	margin: 2%;
+	width: 55.555556% 	  
+}	
+
+
+/* == Media Queries 
+========================================================================================*/
+
+/*--- Tablet Portrait size to standard 960 (devices and browsers)--- */ 
+@media only screen and (min-width: 768px) and (max-width: 959px) {	
+
+body { background: #FFF0F5; }
+#navigation { margin: auto; padding: .20em; width: 50%; text-align: center; }
+#group { padding-right: 5%; margin-left: 5%; }
+#footer { width: 60%; }
+}
+
+/*--- Mobile Lanscape Size to Tablet Portrait (devices and browsers)--- */ 
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+
+body { font-size: 0.875em; background: #F0FFF0; }
+#group { padding-right: 10%; margin-left: 10%; }
+#navigation { margin: auto; padding: .5em; width: 70%; text-align: center; }
+#summit p {-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
+section ul li { margin: 0 5% 2% 5%; padding: 1% 2% 1% 2%; }
+#footer { width: 70%; }
+}
+
+/*--- Mobile Portrait Size to Mobile Lanscape Size (devices and browsers)--- */ 
+@media only screen and (max-width: 479px) {	
+
+body { font-size: 0.688em; background: #f0ffff; }
+#summit_logo { display: none; }
+#group { padding-left: 3%; margin-right: 35%; float: none;  }
+#navigation { margin: .5em; padding: .20em; width: 40%; text-align: left; }
+#navigation li { float: none; }
+#summit p {-moz-column-count: 1; -webkit-column-count: 1; column-count: 1; }
+section { display: none; }
+#groups { float: none; margin: 2% 44% 2% 1%; padding: 0 2% 0 2%; }
+#end_of_pg { width: 70%; }
+#footer { width: 90%; }
+}
+	
+	
+	
