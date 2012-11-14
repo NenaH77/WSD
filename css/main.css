@@ -44,7 +44,7 @@ div.back_topbutton:hover {
 /* Navigation Menu--------------------------------------------------------------------------*/
 
 nav { 
-	width: 45%; /*--600px/900px= .75--*/
+	width: 65%; /*--600px/900px= .75--*/
 	margin: auto;
 	padding: 0;
 	overflow: hidden;
@@ -101,6 +101,8 @@ header p {
 h2 {
 	font-size: 2em; 
 	margin: 2%;
+	position: relative;
+	left: 2em;
 }	
 
 aside {
@@ -174,6 +176,41 @@ section ul li a:active {
 	background: #fffdd0;
 } 
 
+/* Form--------------------------------------------------------------------------*/
+
+h4 {
+	font-size: 2em;
+}
+
+form {
+	padding-bottom: 4%; 
+	border: .3em solid #1bb2c9;	
+	width: 50%;
+	padding: 0 3% 1% 3%;
+	margin-bottom: 2%
+}
+
+/* Table--------------------------------------------------------------------------*/
+	
+table {
+	border-collapse: collapse;
+	border: .3em solid #d2868f;
+	margin: 2% 2% 2% 0;
+}		
+
+td {
+	border: .2em #c29424;
+	padding: 0.4em;
+}
+
+th {
+	border: .2em #c29424;
+	text-align: center;
+	background-color: #f0cd91;
+	color: #FFFFFF;
+	padding: 0.4em;
+}
+
 /* Footer--------------------------------------------------------------------------*/
 
 h5 {
@@ -192,7 +229,6 @@ address {
 	color: #1bb2c9; 	  
 }	
 
-
 /* == Media Queries 
 ========================================================================================*/
 
@@ -202,15 +238,17 @@ address {
 body { background: #FFF0F5; }
 nav { margin: auto; padding: 0 20% 0 20%; width: 55%; text-align: center; }
 aside { padding-right: 5%; margin-left: 5%; }
+#message { max-width: 80%; }
 }
 
 /*--- Mobile Lanscape Size to Tablet Portrait (devices and browsers)--- */ 
 @media only screen and (min-width: 480px) and (max-width: 767px) {	
 
-body { font-size: 0.875em; background: #F0FFF0; }
-aside { padding: 0 1% 0 1%; margin: 0 1% 0 1%; }
+body { font-size: 1.063em; background: #F0FFF0; }
 nav { margin: 0 1% 0 15%; padding: 0 1% 0 3%; width: 80%; text-align: center; }
 header p {-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
+aside { padding: 0 1% 0 1%; margin: 0 1% 0 1%; }
+#message { max-width: 90%; }
 section ul li { margin: 0 5% 2% 8%; padding: 1% 2% 1% 2%; }
 footer { width: 65%; }
 }
@@ -218,16 +256,20 @@ footer { width: 65%; }
 /*--- Mobile Portrait Size to Mobile Lanscape Size (devices and browsers)--- */ 
 @media only screen and (max-width: 479px) {	
 
-body { font-size: 0.688em; background: #f0ffff; }
+body { font-size: 1.1em; background: #f0ffff; }
 #summit_logo { display: none; }
 nav { margin-left: -8%; padding: .2%; width: 40%; text-align: left; }
 nav li { float: none; }
 header p {-moz-column-count: 1; -webkit-column-count: 1; column-count: 1; }
-section { margin: 0 20% 3% 0;  }
-section ul li { float: none; }
+h2 { position: static; }
 aside { float: left; margin: 1% 3% 2% 1%; padding: 0 2% 0 1%;  }
+#cat { float: none; }
+article { clear: both;  }
+section ul li { float: none; }
+form { padding-bottom: 2%; }
+table { font-size: .688em; }
+#message { max-width: 95%; }
 footer { width: 70%; }
-
 }
 	
 	
